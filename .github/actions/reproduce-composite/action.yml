@@ -1,0 +1,11 @@
+name: 'Reproduce scorecard bug scanning composite actions'
+description: >
+  Scorecard should detect that we are calling third party
+  actions without pinning, but it doesn't
+runs:
+  using: "composite"
+  steps:
+    - name: Prepare helm
+      uses: azure/setup-helm@v3
+      with:
+        version: 3.3.4
