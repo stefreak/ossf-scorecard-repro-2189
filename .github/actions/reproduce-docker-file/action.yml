@@ -1,8 +1,0 @@
-name: 'Reproduce scorecard bug scanning docker actions'
-description: >
-  Scorecard should detect that we are calling third party
-  docker container without pinning, but it doesn't
-runs:
-  using: "docker"
-  image: "Dockerfile"
-  args: ["echo", "Hello World"]
